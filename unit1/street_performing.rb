@@ -1,3 +1,5 @@
+#Best lesson ever. Who knew I would get to to programming tasks related to my circus hobbies!
+#However, I would have chosen cyr wheel instead of blockhead
 puts "Welcome everyone to the amazing street circus! We have some great acts lines up for you today. \n For our first act we will need a voluntter \n How about you?"
 puts "What's your name?"
 name = gets.chomp
