@@ -6,10 +6,12 @@ item = gets.chomp.to_s
 puts "How many would you like?"
 quantity = gets.chomp
 
-if quantity.to_s == "tons"
-  until quantity == 0 do
+location_of_tons = quantity.index('tons')
+if !location_of_tons.nil? && quantity.index('tons') >= 0
+  counter = 1
+  until counter == 0 do
     puts item
-    quantity = rand(0..14)
+    counter = rand(0..14)
   end
 else
   quantity.to_i.times do
@@ -17,8 +19,8 @@ else
   end
 end
 
-if quantity <= 0 && quantity != 'tons'
-  puts "If you didn't want any. Why did you ask? (Try entering a number greater than 0)"
+if (quantity.to_i <= 0 && location_of_tons.nil?)
+  puts "Why did you ask if you didn't want anything? (Try entering a number greater than 0 or 'tons')"
 else
   puts "There you go. Visit again soon!"
 end
