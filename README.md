@@ -1,2 +1,2 @@
 # learn_launch_exercises
-Exercises completed while following the curriculum at learn.launchacademy.com (free version).
+Exercises completed while following the curriculum at http://learn.launchacademy.com (free version).
